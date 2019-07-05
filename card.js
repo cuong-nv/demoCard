@@ -164,7 +164,7 @@ function updateAvatarImageStatus(){
                 if (obj){ 
                     obj.opacity = 1;
                     var stringid = ""+obj.id;
-                    if(stringid == 'undefined') {
+                    if(stringid == 'undefined' || stringid == 'chat_text_id') {
                         obj.selectable = true;
                     }else {
                         
@@ -208,18 +208,18 @@ function downloadFabric(canvas,name){
     
 }
 function addBoxChat(){
-    var rect = new fabric.Rect({
-        id:"boxchat",
-        top : 120,
-        left : 360,
-        width : 230,
-        height : 250,
-        fill : 'transparent',
-        stroke : 'black',
-        strokeWidth : 1,
-        selectable: false
-    });
-    canvas.add(rect);
+//     var rect = new fabric.Rect({
+//         id:"boxchat",
+//         top : 120,
+//         left : 360,
+//         width : 230,
+//         height : 250,
+//         fill : 'transparent',
+//         stroke : 'black',
+//         strokeWidth : 1,
+//         selectable: false
+//     });
+//     canvas.add(rect);
 
     var textbox = new extendedTextbox('',{
         id: "chat_text_id",
@@ -229,7 +229,7 @@ function addBoxChat(){
         left: 370,
         fontSize: 30,
         editable: false,
-        selectable: false,
+        selectable: true,
         breakWords: true
     });
     canvas.add(textbox);
