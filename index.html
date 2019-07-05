@@ -1,0 +1,80 @@
+<html>
+<head>
+    <link rel="stylesheet" href="card.css">
+    <script src="dist/fabric.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="card.js"></script>
+</head>
+
+<body>
+    <div class = "main_body">
+        <div style="display: flex;">
+            <div class="main_card">
+                <canvas id="canvas" width="614" height="430" style="border:1px solid #000000;" ></canvas>
+            </div>
+            <div class="main_menu" style="padding-left: 20px;text-align: center">
+                <div>
+                        <textarea id="id_chat" style = "width:230px; height:250px; padding: 10px; overflow-y: overlay; font-size: 28px;"></textarea>
+                        
+                </div>
+                <button class="mbutton" onclick="updateTextChat()" >Input Button</button>
+                <button class="mbutton" onclick="convertToImagen()" >Decision Button</button>
+                <!-- <button class="mbutton" onclick="updateTextChat()" >Chose Avatart Image</button>
+                <input type="file" onChange="changeAvatar(this)"/> -->
+                <div style="padding-top: 10px">
+                    <label for="files" class="">Select Image for Avatar</label>
+                    <input id="files" style="visibility:hidden;" type="file"onChange="changeAvatar(this)">
+                    
+                </div>
+                
+                <div style = "margin: 10px; width: 200px;">
+                    <label>Card: </label> 
+                    <select id="chose-card">
+                        <option value="New_TC_P_004.png">New_TC_P_004.png</option>
+                        <option value="New_TC_P_009.png">New_TC_P_009.png</option>
+                        <option value="New_TC_P_010.png">New_TC_P_010.png</option>
+                       
+                    </select>
+                    
+            </div>
+                
+            </div>
+            <div class="menu_chose_avatar" style = "display: none; padding-left: 20px;">
+                    <div style="padding-top: 10px">
+                        <label for="files" class="">Select Other Image for Avatar</label>
+                        <input id="files" style="visibility:hidden;" type="file"onChange="changeAvatar(this)">
+                        
+                    </div>
+                    <div>
+                        <button class="mbutton" onclick ="updateAvatarImageStatus()">Done</button>
+                    </div>
+            </div>
+            
+        </div>
+        <div class = "menu_image">
+                <img class ="mImage"  src="imag/New_TC_seal_01.png" onclick="addImage(this)">
+                <img class ="mImage"  src="imag/New_TC_seal_02.png" onclick="addImage(this)">
+                <img class ="mImage"  src="imag/New_TC_seal_03.png" onclick="addImage(this)">
+                <img class ="mImage"  src="imag/New_TC_seal_04.png" onclick="addImage(this)">
+                <img class ="mImage"  src="imag/New_TC_seal_05.png" onclick="addImage(this)">
+                <img class ="mImage"  src="imag/New_TC_seal_06.png" onclick="addImage(this)">
+                <img class ="mImage"  src="imag/New_TC_seal_07.png" onclick="addImage(this)">
+                <img class ="mImage"  src="imag/New_TC_seal_08.png" onclick="addImage(this)">
+                <img class ="mImage"  src="imag/New_TC_seal_09.png" onclick="addImage(this)">
+                <img class ="mImage"  src="imag/New_TC_seal_10.png" onclick="addImage(this)">
+                <img class ="mImage"  src="imag/New_TC_seal_11.png" onclick="addImage(this)">
+                <img class ="mImage"  src="imag/New_TC_seal_12.png" onclick="addImage(this)">
+                <img class ="mImage"  src="imag/New_TC_seal_13.png" onclick="addImage(this)">
+                <img class ="mImage"  src="imag/New_TC_seal_14.png" onclick="addImage(this)">
+                <img class ="mImage"  src="imag/New_TC_seal_15.png" onclick="addImage(this)">
+                <img class ="mImage"  src="imag/New_TC_seal_16.png" onclick="addImage(this)">
+                <img class ="mImage"  src="imag/New_TC_seal_17.png" onclick="addImage(this)">
+                <img class ="mImage"  src="imag/New_TC_seal_18.png" onclick="addImage(this)">
+                <img class ="mImage"  src="imag/New_TC_seal_19.png" onclick="addImage(this)">
+                <img class ="mImage"  src="imag/New_TC_seal_20.png" onclick="addImage(this)">
+        </div>
+    </div>
+    
+    
+</body>
+</html>

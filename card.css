@@ -1,0 +1,30 @@
+.main_body{
+    width: 1000;
+    height: auto;
+    border-color: #000000;
+    border-style:solid; 
+    border-width: 1px;
+    margin: 20px;
+    padding: 20px;
+}
+
+.main_card{
+    width: 620px;
+    height: auto;
+
+}
+.main_menu{
+    width: auto;
+    height: auto;
+}
+.mbutton{
+    padding: 10px; 
+    margin-top: 10px;
+    font-size: 20px;
+}
+.mImage{
+    height: 50px;
+    width: auto;
+    margin: 20px;
+    border: solid 1px;
+}
