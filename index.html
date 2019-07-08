@@ -22,9 +22,11 @@
                 <!-- <button class="mbutton" onclick="updateTextChat()" >Chose Avatart Image</button>
                 <input type="file" onChange="changeAvatar(this)"/> -->
                 <div style="padding-top: 10px">
-                    <label for="files" class="">Select Image for Avatar</label>
+<!--                     <label for="files" class="">Select Image for Avatar</label>
                     <input id="files" style="visibility:hidden;" type="file"onChange="changeAvatar(this)">
-                    
+                     -->
+                    <input type="file" id="myFileInput" style="display:none;" onChange="changeAvatar(this)"/>
+                    <button class="mbutton" onclick="document.getElementById('myFileInput').click()" >Select Image for Avatar</button>
                 </div>
                 
                 <div style = "margin: 10px; width: 200px;">
@@ -41,8 +43,10 @@
             </div>
             <div class="menu_chose_avatar" style = "display: none; padding-left: 20px;">
                     <div style="padding-top: 10px">
-                        <label for="files" class="">Select Other Image for Avatar</label>
-                        <input id="files" style="visibility:hidden;" type="file"onChange="changeAvatar(this)">
+<!--                         <label for="files" class="">Select Other Image for Avatar</label>
+                        <input id="files" style="visibility:hidden;" type="file"onChange="changeAvatar(this)"> -->
+                        <input type="file" id="myFileInput1" style="display:none;" onChange="changeAvatar(this)"/>
+                        <button class="mbutton" onclick="document.getElementById('myFileInput1').click()" >Select Other Image for Avatar</button>
                         
                     </div>
                     <div>
